@@ -122,3 +122,10 @@ const fs=require('fs');
 //         console.log('successfully delete')
 //     }
 // })
+
+//6
+// fs.mkdir and fs rmdir
+// fs.writeFile('./tutorial/example.txt')
+// fs.unlink('./tutorial/example.txt') single file
+
+
