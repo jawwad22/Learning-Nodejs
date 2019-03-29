@@ -138,18 +138,18 @@ const fs=require('fs');
 
 //10
 const http=require('http');
-const server=http.createServer((req,res)=>{
-// res.write('hello world from response');
+// const server=http.createServer((req,res)=>{
+// // res.write('hello world from response');
+// // res.end();
+
+// if(req.url==='/'){
+//    res.write('hello world from response');
 // res.end();
+// }
+// else {
+//     res.write('using other domain');
+//     res.end();
+// }
+// });
 
-if(req.url==='/'){
-   res.write('hello world from response');
-res.end();
-}
-else {
-    res.write('using other domain');
-    res.end();
-}
-});
-
-server.listen('3000');
+// server.listen('3000');
