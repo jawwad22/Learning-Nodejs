@@ -43,29 +43,82 @@
 // hena.emit('name');
 
 //4
-const readline = require('readline');
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+// const readline = require('readline');
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
 
-let num1=Math.floor((Math.random()*10)+1);
-let num2=Math.floor((Math.random()*10)+1);
-let answer=num1+num2;
+// let num1=Math.floor((Math.random()*10)+1);
+// let num2=Math.floor((Math.random()*10)+1);
+// let answer=num1+num2;
 
-rl.question(`what is ${num1}+${num2}?\n`,(userInput)=>{
-    console.log(userInput);
-    if(userInput.trim()==answer){
-        rl.close();
-    }
-    else {
-        rl.setPrompt('Incorrect response please try again \n');
-    rl.prompt();
+// rl.question(`what is ${num1}+${num2}?\n`,(userInput)=>{
+//     console.log(userInput);
+//     if(userInput.trim()==answer){
+//         rl.close();
+//     }
+//     else {
+//         rl.setPrompt('Incorrect response please try again \n');
+//     rl.prompt();
     
-}
+// }
 
-});
+// });
 
-rl.on('close',()=>{
-    console.log('Correct!!!');
-})
+// rl.on('close',()=>{
+//     console.log('Correct!!!');
+// })
+//5
+
+const fs=require('fs');
+//create a file
+// fs.writeFile('exampler.txt','this is an example'
+// ,(err)=>{
+//     if(err){console.log(err)}
+//     else
+//      {console.log('created successfully')
+//     fs.readFile('exampler.txt','utf8',(err,file)=>{
+//         if(err)
+//         {
+//             console.log(err);
+//         }
+//         else {
+//             console.log(file);
+//         }
+//     })
+//     }
+// }
+// )
+
+//rename the file
+// fs.rename('exampler.txt','example2.txt',(err)=>{
+//     if(err){
+//         console.log(err);
+//     }
+//     else {
+//         console.log('rename the file ')
+//     }
+// })
+
+//add in the file
+
+// fs.appendFile('example2.txt','Some date being appended',(err)=>{
+//     if(err){
+//         console.log(err)
+//     }
+//     else {
+//         console.log('ddaya added to file')
+//     }
+// })
+
+//delete the file 
+
+// fs.unlink('example2.txt',(err)=>{
+//     if(err){
+//         console.log(err);
+//     }
+//     else{
+//         console.log('successfully delete')
+//     }
+// })
