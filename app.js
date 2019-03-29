@@ -128,4 +128,10 @@ const fs=require('fs');
 // fs.writeFile('./tutorial/example.txt')
 // fs.unlink('./tutorial/example.txt') single file
 
-
+//7
+// readStream=fs.createReadStream('./example.txt','utf8');
+// const writeStream=fs.createWriteStream('example.txt');
+// readStream.on('data',(chunk)=>{
+//     console.log(chunk);
+//     writeStream.write(chunk);
+// })
